@@ -1,0 +1,36 @@
+button{
+    width: 42px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cotainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(93, 93, 187);
+    border-radius: 20px;
+}
+.screen{
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkgreen;
+}
+.btn, .clear, .equal{
+    text-align: center;
+    background-color: rgb(125, 190, 125);
+    border-radius: 50%;
+    height: 30px;
+    box-shadow: rgb(223, 87, 87) 1px 1px 0px 1px;
+
+    
+}
