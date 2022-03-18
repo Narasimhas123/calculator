@@ -8,19 +8,19 @@ table{
 }
 
 input{
-    border-radius: 21px;
-    border: 5px solid black;
+    border-radius: 20px;
+    border: 4px solid black;
     font-size:34px;
-    height: 65px;
+    height: 70px;
     width: 456px;
 }
 
 button{
-    border-radius: 20px;
+    border-radius: 16px;
     font-size: 40px;
     background: #978fa0;
-    width: 102px;
-    height: 90px;
+    width: 90px;
+    height: 80px;
     margin: 6px;
 }
 
