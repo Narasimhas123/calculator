@@ -1,26 +1,26 @@
-const screens=document.querySelector('.screen');
-const btns=document.querySelectorAll('.btn');
-const clears=document.querySelector('.clear');
-const equals=document.querySelector('.equal');
+let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
 
-for(let i=0; i<btns.length; i++){
-    // btns[i].addEventListener('click', function (){
-//     //     let number=btns[i].getAttribute('value');
-//     //     screens.value+=number
-//     })
-btns[i].addEventListener('click', function(){
-    let number=btns[i].getAttribute('value');
-    screens.value +=number;
-})
- }
- equals.addEventListener('click',function(){
-     if(screens.value===''){
-         alert('enter value')
-     }else{
-     let value=eval(screens.value);
-     screens.value=value;
-     }
- })
- clears.addEventListener('click', function(){
-     screens.value='';
- })
+    })
+}
